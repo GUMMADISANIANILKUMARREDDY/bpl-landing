@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="BPL Tech - Leading provider of web solutions, startup prototypes, legacy system modernization, and professional training & internship programs for students.">
+	<meta name="keywords" content="web development, startup prototypes, legacy modernization, internships, training, customer support, BPL Tech">
+	<meta name="author" content="BPL Tech">
+	
+	<!-- Security Headers -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
+	<meta http-equiv="X-Content-Type-Options" content="nosniff">
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	
+	<title>BPL Tech - Web Solutions, Training & Internships</title>
+	
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<body>
+	<!-- Page Loader -->
+	<div class="page-loader" id="pageLoader">
+		<div class="loader-content">
+			<div class="loader-logo">
+				<svg width="150" height="150" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<linearGradient id="loaderGradient" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+4							<stop stop-color="#f59e0b"/>
+							<stop offset="0.5" stop-color="#10b981"/>
+							<stop offset="1" stop-color="#06b6d4"/>
+						</linearGradient>
+					</defs>
+					<rect x="5" y="5" width="70" height="70" rx="20" fill="url(#loaderGradient)"/>
+					<text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="bold" fill="#fff" letter-spacing="-4">BPL</text>
+					<circle cx="40" cy="40" r="32" stroke="#fff" stroke-width="3" fill="none"/>
+					<path d="M20 60 Q40 20 60 60" stroke="#fff" stroke-width="2" fill="none"/>
+					<circle cx="40" cy="40" r="6" fill="#fff" opacity="0.3"/>
+				</svg>
+			</div>
+			<div class="loader-spinner"></div>
+			<div class="loader-text">
+				Loading BPL Tech<span class="loader-dots"></span>
+			</div>
+			<div class="loader-progress">
+				<div class="loader-progress-bar"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Top Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-custom" id="mainNav">
+		<div class="container-fluid">
+			<span class="navbar-logo me-3">
+				<svg class="navbar-logo-svg" width="56" height="56" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<linearGradient id="navLogoGradient" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#f59e0b"/>
+							<stop offset="0.5" stop-color="#10b981"/>
+							<stop offset="1" stop-color="#06b6d4"/>
+						</linearGradient>
+					</defs>
+					<rect x="5" y="5" width="70" height="70" rx="20" fill="url(#navLogoGradient)"/>
+					<text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="bold" fill="#fff" letter-spacing="-4">BPL</text>
+					<circle cx="40" cy="40" r="32" stroke="#fff" stroke-width="3" fill="none"/>
+					<path d="M20 60 Q40 20 60 60" stroke="#fff" stroke-width="2" fill="none"/>
+					<circle cx="40" cy="40" r="6" fill="#fff" opacity="0.3"/>
+				</svg>
+			</span>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto align-items-center">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#training">Training</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+				<div class="d-flex ms-3">
+					<button class="register-btn" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="hero" id="home">
+		<div class="container">
+			<div class="hero-content">
+				<h1>Transform Your Digital Presence with BPL Tech</h1>
+				<p>Expert web solutions, startup prototypes, legacy system modernization, and comprehensive training programs to elevate your business and career.</p>
+				<div class="hero-cta">
+					<a href="#services" class="cta-primary">Explore Services</a>
+					<a href="#training" class="cta-secondary">Join Our Programs</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="section bg-light-section" id="about">
+		<div class="container">
+			<div class="section-title">
+				<h2>About <span class="text-gradient">BPL Tech</span></h2>
+				<p>Your trusted partner in digital transformation and professional development</p>
+			</div>
+			<div class="about-content">
+				<div class="about-text">
+					<h3>Building Tomorrow's Technology Today</h3>
+					<p>BPL Tech is a leading technology solutions provider specializing in modern web development, startup incubation, and digital transformation services. We help businesses transition from legacy systems to cutting-edge technologies.</p>
+					<p>Our mission extends beyond development - we're committed to nurturing the next generation of tech professionals through comprehensive training and internship programs tailored for students and early-career developers.</p>
+					<p>With years of experience in delivering innovative solutions, we've partnered with startups, established companies, and educational institutions to create impactful digital experiences.</p>
+				</div>
+				<div class="about-stats">
+					<div class="stat-box">
+						<div class="stat-number">150+</div>
+						<div class="stat-label">Projects Delivered</div>
+					</div>
+					<div class="stat-box">
+						<div class="stat-number">50+</div>
+						<div class="stat-label">Happy Clients</div>
+					</div>
+					<div class="stat-box">
+						<div class="stat-number">200+</div>
+						<div class="stat-label">Students Trained</div>
+					</div>
+					<div class="stat-box">
+						<div class="stat-number">98%</div>
+						<div class="stat-label">Success Rate</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section class="section" id="services">
+		<div class="container">
+			<div class="section-title">
+				<h2>Our <span class="text-gradient">Services</span></h2>
+				<p>Comprehensive technology solutions tailored to your business needs</p>
+			</div>
+			<div class="row g-4">
+				<!-- Service 1: Startup Prototypes -->
+				<div class="col-lg-4 col-md-6">
+					<div class="service-card">
+						<div class="card-icon">🚀</div>
+						<h3>Startup Prototypes</h3>
+						<p>Transform your innovative ideas into functional prototypes. We help startups and new companies build MVPs and proof-of-concepts quickly and efficiently.</p>
+						<ul class="card-list">
+							<li>Rapid MVP Development</li>
+							<li>Interactive Prototypes</li>
+							<li>User Experience Design</li>
+							<li>Technical Feasibility Analysis</li>
+							<li>Investor-Ready Demos</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Service 2: Legacy Modernization -->
+				<div class="col-lg-4 col-md-6">
+					<div class="service-card">
+						<div class="card-icon">🔄</div>
+						<h3>Legacy System Modernization</h3>
+						<p>Breathe new life into your outdated systems. We specialize in transforming legacy applications into modern, scalable, and maintainable solutions.</p>
+						<ul class="card-list">
+							<li>Code Refactoring & Migration</li>
+							<li>Architecture Redesign</li>
+							<li>Cloud Integration</li>
+							<li>Performance Optimization</li>
+							<li>Security Enhancement</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Service 3: Customer Support Solutions -->
+				<div class="col-lg-4 col-md-6">
+					<div class="service-card">
+						<div class="card-icon">💬</div>
+						<h3>Customer Support Systems</h3>
+						<p>Enhance customer satisfaction with modern support platforms. We build comprehensive support systems that streamline communication and issue resolution.</p>
+						<ul class="card-list">
+							<li>Helpdesk Portal Development</li>
+							<li>Ticketing System Integration</li>
+							<li>Live Chat Implementation</li>
+							<li>Knowledge Base Solutions</li>
+							<li>Analytics & Reporting</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Service 4: Web Development -->
+				<div class="col-lg-4 col-md-6">
+					<div class="service-card">
+						<div class="card-icon">💻</div>
+						<h3>Custom Web Development</h3>
+						<p>Full-stack web development services using the latest technologies. From concept to deployment, we create responsive and scalable web applications.</p>
+						<ul class="card-list">
+							<li>Responsive Web Design</li>
+							<li>E-commerce Solutions</li>
+							<li>Progressive Web Apps</li>
+							<li>API Development</li>
+							<li>Database Architecture</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Service 5: UI/UX Design -->
+				<div class="col-lg-4 col-md-6">
+					<div class="service-card">
+						<div class="card-icon">🎨</div>
+						<h3>UI/UX Design</h3>
+						<p>Create stunning user experiences that drive engagement. Our design team crafts intuitive interfaces that users love.</p>
+						<ul class="card-list">
+							<li>User Research & Testing</li>
+							<li>Wireframing & Prototyping</li>
+							<li>Visual Design</li>
+							<li>Brand Identity</li>
+							<li>Design Systems</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Service 6: Consulting -->
+				<div class="col-lg-4 col-md-6">
+					<div class="service-card">
+						<div class="card-icon">📊</div>
+						<h3>Technology Consulting</h3>
+						<p>Expert guidance for your technology decisions. We provide strategic consulting to help you choose the right tech stack and architecture.</p>
+						<ul class="card-list">
+							<li>Technology Stack Selection</li>
+							<li>Architecture Planning</li>
+							<li>Code Review & Audit</li>
+							<li>Performance Analysis</li>
+							<li>Best Practices Training</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Training & Internships Section -->
+	<section class="section bg-light-section" id="training">
+		<div class="container">
+			<div class="section-title">
+				<h2><span class="text-gradient">Training</span> & Internships</h2>
+				<p>Empowering the next generation of tech professionals with hands-on experience</p>
+			</div>
+			<div class="row g-4 mb-5">
+				<!-- Internship Program -->
+				<div class="col-lg-6">
+					<div class="training-card">
+						<div class="card-icon">🎓</div>
+						<h3>Professional Internship Programs</h3>
+						<p>Gain real-world experience working on live projects. Our internship programs provide students with hands-on training in modern web technologies and industry best practices.</p>
+						<ul class="card-list">
+							<li>6-Month Structured Program</li>
+							<li>Work on Real Client Projects</li>
+							<li>Mentorship from Senior Developers</li>
+							<li>Industry-Standard Tools & Workflows</li>
+							<li>Certificate of Completion</li>
+							<li>Job Placement Assistance</li>
+						</ul>
+						<button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#registerModal">Apply for Internship</button>
+					</div>
+				</div>
+				
+				<!-- Training Programs -->
+				<div class="col-lg-6">
+					<div class="training-card">
+						<div class="card-icon">📚</div>
+						<h3>Technical Training Programs</h3>
+						<p>Comprehensive training courses designed to upskill students and professionals in cutting-edge technologies. Learn from industry experts with practical, project-based learning.</p>
+						<ul class="card-list">
+							<li>Full-Stack Web Development</li>
+							<li>Frontend Frameworks (React, Angular, Vue)</li>
+							<li>Backend Technologies (Node.js, Python, Java)</li>
+							<li>Database Management & Design</li>
+							<li>DevOps & Cloud Computing</li>
+							<li>Mobile App Development</li>
+						</ul>
+						<button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#registerModal">Enroll in Training</button>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Program Highlights -->
+			<div class="features-grid">
+				<div class="feature-item">
+					<div class="feature-icon">⏱️</div>
+					<div class="feature-content">
+						<h4>Flexible Schedule</h4>
+						<p>Evening and weekend batches available for working professionals and students</p>
+					</div>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">👥</div>
+					<div class="feature-content">
+						<h4>Small Batch Size</h4>
+						<p>Limited seats per batch ensure personalized attention and mentorship</p>
+					</div>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">💼</div>
+					<div class="feature-content">
+						<h4>Job Opportunities</h4>
+						<p>Top performers get direct job offers from BPL Tech and partner companies</p>
+					</div>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">🏆</div>
+					<div class="feature-content">
+						<h4>Industry Certificate</h4>
+						<p>Receive recognized certification upon successful completion of the program</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="cta-section">
+		<div class="container">
+			<div class="cta-content">
+				<h2>Ready to Start Your Journey?</h2>
+				<p>Join hundreds of satisfied clients and successful students who chose BPL Tech</p>
+				<button class="cta-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Get Started Today</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="section" id="contact">
+		<div class="container">
+			<div class="section-title">
+				<h2>Get in <span class="text-gradient">Touch</span></h2>
+				<p>Have questions? We'd love to hear from you</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="service-card">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Full Name *</label>
+									<input type="text" class="form-control" id="contactName" required>
+								</div>
+								<div class="col-md-6 mb-3">
+									<label class="form-label">Email Address *</label>
+									<input type="email" class="form-control" id="contactEmail" required>
+								</div>
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Subject *</label>
+								<input type="text" class="form-control" id="contactSubject" required>
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Message *</label>
+								<textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<!-- Company Info -->
+				<div class="footer-section">
+					<h4>BPL Tech</h4>
+					<p>Leading provider of web solutions, startup prototypes, legacy system modernization, and professional training programs.</p>
+					<div class="social-links">
+						<a href="#" class="social-link" aria-label="Facebook">📘</a>
+						<a href="#" class="social-link" aria-label="Twitter">🐦</a>
+						<a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+						<a href="#" class="social-link" aria-label="Instagram">📷</a>
+					</div>
+				</div>
+				
+				<!-- Quick Links -->
+				<div class="footer-section">
+					<h4>Quick Links</h4>
+					<ul class="footer-links">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#training">Training & Internships</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				
+				<!-- Services -->
+				<div class="footer-section">
+					<h4>Our Services</h4>
+					<ul class="footer-links">
+						<li><a href="#services">Startup Prototypes</a></li>
+						<li><a href="#services">Legacy Modernization</a></li>
+						<li><a href="#services">Customer Support</a></li>
+						<li><a href="#services">Web Development</a></li>
+						<li><a href="#services">UI/UX Design</a></li>
+					</ul>
+				</div>
+				
+				<!-- Contact Info -->
+				<div class="footer-section">
+					<h4>Contact Us</h4>
+					<ul class="footer-links">
+						<li>📧 info@bpltech.com</li>
+						<li>📞 +1 (555) 123-4567</li>
+						<li>📍 123 Tech Street, Innovation Hub</li>
+						<li>🕐 Mon - Fri: 9:00 AM - 6:00 PM</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p>&copy; 2024 BPL Tech. All rights reserved.</p>
+				<p>Privacy Policy | Terms of Service | Cookie Policy</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scroll to Top Button -->
+	<div class="scroll-top" id="scrollTop">↑</div>
+
+	<!-- Register Modal -->
+	<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="registerModalLabel">Register with BPL Tech</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="registerForm">
+						<div class="mb-3">
+							<label class="form-label">Full Name *</label>
+							<input type="text" class="form-control" id="regName" placeholder="Enter your full name" required>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Email Address *</label>
+							<input type="email" class="form-control" id="regEmail" placeholder="you@example.com" required>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Phone Number *</label>
+							<input type="tel" class="form-control" id="regPhone" placeholder="+1 (555) 123-4567" required>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Area of Interest *</label>
+							<select class="form-select" id="regInterest" required>
+								<option value="">Select an option</option>
+								<option value="internship">Internship Program</option>
+								<option value="training">Technical Training</option>
+								<option value="job">Job / Career Opportunity</option>
+								<option value="services">Business Services</option>
+								<option value="partnership">Partnership / Collaboration</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Additional Information</label>
+							<textarea class="form-control" id="regMessage" rows="3" placeholder="Tell us more about your requirements..."></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" id="submitRegister">Submit Registration</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	
+	<!-- Custom JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>
