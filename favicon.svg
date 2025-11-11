@@ -1,0 +1,14 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="navLogoGradient" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f59e0b"/>
+      <stop offset="0.5" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="70" height="70" rx="20" fill="url(#navLogoGradient)"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="bold" fill="#fff" letter-spacing="-4">BPL</text>
+  <circle cx="40" cy="40" r="32" stroke="#fff" stroke-width="3" fill="none"/>
+  <path d="M20 60 Q40 20 60 60" stroke="#fff" stroke-width="2" fill="none"/>
+  <circle cx="40" cy="40" r="6" fill="#fff" opacity="0.3"/>
+</svg>
